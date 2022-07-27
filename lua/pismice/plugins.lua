@@ -29,7 +29,7 @@ if not status_ok then
   return
 end
 
--- Have packer use a popup window
+-- Haverafamadriz/friendly-snippets packer use a popup window
 packer.init({
   display = {
     open_fn = function()
@@ -43,9 +43,11 @@ return packer.startup(function(use)
   -- My plugins here
 
   use({ "wbthomason/packer.nvim" }) -- Have packer manage itself
-  use({ "windwp/nvim-autopairs", commit = "fa6876f832ea1b71801c4e481d8feca9a36215ec" }) -- Autopairs, integrates with both cmp and treesitter
+  --use({ "windwp/nvim-autopairs", commit = "fa6876f832ea1b71801c4e481d8feca9a36215ec" }) -- Autopairs, integrates with both cmp and treesitter
+  use("jiangmiao/auto-pairs")
   use({"preservim/nerdtree"})
   use({"Xuyuanp/nerdtree-git-plugin"})
+  use("jose-elias-alvarez/null-ls.nvim")
 
   -- Colorschemes
   use({ "folke/tokyonight.nvim", commit = "8223c970677e4d88c9b6b6d81bda23daf11062bb" })
@@ -58,6 +60,8 @@ return packer.startup(function(use)
   use({ "saadparwaiz1/cmp_luasnip", commit = "a9de941bcbda508d0a45d28ae366bb3f08db2e36" }) -- snippet completions
   use({ "hrsh7th/cmp-nvim-lsp", commit = "affe808a5c56b71630f17aa7c38e15c59fd648a8" })
   use({ "hrsh7th/cmp-nvim-lua", commit = "d276254e7198ab7d00f117e88e223b4bd8c02d21" })
+  use("L3MON4D3/LuaSnip")
+  use("rafamadriz/friendly-snippets")
 
   -- snippets
 

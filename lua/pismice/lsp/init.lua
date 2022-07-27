@@ -5,4 +5,4 @@ end
 
 require "pismice.lsp.configs"
 require("pismice.lsp.handlers").setup()
-require "pismice.lsp.null-ls"
+--require "pismice.lsp.null-ls"
