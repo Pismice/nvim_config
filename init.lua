@@ -1,6 +1,7 @@
 require "pismice.options"
 require "pismice.plugins"
 require "pismice.colorscheme"
+require "pismice.treesitter"
 require "pismice.remap"
 require "pismice.lsp"
 require "pismice.cmp"
